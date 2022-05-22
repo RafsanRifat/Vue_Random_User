@@ -1,4 +1,8 @@
 const app = Vue.createApp({
+    template: ` <img class="rounded-circle" :src="picture" alt="" >
+        <h2>{{firstName}} {{lastName}}</h2>
+        <p>{{email}}</p>
+        <button @click="getUser" class="btn btn-warning">Get more user</button>`,
     data() {
         return {
             firstName: "Paul",
